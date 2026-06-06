@@ -1,4 +1,4 @@
-# Nafis-Beta
+
 # 🌐 Nafis Translator Beta
 
 A clean, fast, and fully responsive web app to translate text between **100+ languages** instantly. No API key, no build step, no backend required. Just open and translate.
