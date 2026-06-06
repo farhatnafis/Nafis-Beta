@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nafis Translator Beta</title>
+  <meta name="description" content="Translate text between all languages instantly. Free and fast." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <span class="logo">🌐</span>
+      <h1>Nafis Translator <span class="beta">Beta</span></h1>
+    </div>
+    <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+  </header>
+
+  <main class="container">
+    <div class="lang-bar">
+      <select id="sourceLang" class="lang-select"></select>
+      <button id="swapBtn" class="swap-btn" aria-label="Swap languages">⇄</button>
+      <select id="targetLang" class="lang-select"></select>
+    </div>
+
+    <div class="panels">
+      <div class="panel">
+        <textarea id="sourceText" placeholder="Enter text to translate..." maxlength="5000"></textarea>
+        <div class="panel-tools">
+          <span id="charCount" class="char-count">0 / 5000</span>
+          <div class="tool-group">
+            <button class="icon-btn" id="speakSource" title="Listen">🔊</button>
+            <button class="icon-btn" id="clearSource" title="Clear">✕</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <textarea id="targetText" placeholder="Translation" readonly></textarea>
+        <div class="panel-tools">
+          <span id="detected" class="detected"></span>
+          <div class="tool-group">
+            <button class="icon-btn" id="speakTarget" title="Listen">🔊</button>
+            <button class="icon-btn" id="copyTarget" title="Copy">📋</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="translateBtn" class="translate-btn">Translate</button>
+    <p id="status" class="status"></p>
+  </main>
+
+  <footer class="footer">
+    <p>Nafis Translator Beta · Built with ❤️ · <span id="year"></span></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
